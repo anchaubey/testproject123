@@ -5,7 +5,7 @@ pipeline {
      stages{
        stage('checkout'){
             steps{
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://gitlab.com/imanishchaudhary/simple-node-js-react-npm-app.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/anchaubey/testproject123.git']]])
         }
         }
             stage("Build") {
